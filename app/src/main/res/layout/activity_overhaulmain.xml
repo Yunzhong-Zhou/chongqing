@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+    <com.zhitiekeji.equipmentmanagement.view.FragmentIndicator1
+        android:paddingTop="0.5dp"
+        android:id="@+id/indicator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray" />
+    <!--上报计划-->
+    <fragment
+        android:id="@+id/fragment1"
+        class="com.zhitiekeji.equipmentmanagement.fragment.ReportedPlanFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/indicator"
+        tools:layout="@layout/fragment_reportedplan" />
+    <!--批复计划-->
+    <fragment
+        android:id="@+id/fragment2"
+        class="com.zhitiekeji.equipmentmanagement.fragment.ReplyPlanFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/indicator"
+        tools:layout="@layout/fragment_replyplan" />
+    <!--批复实施-->
+    <fragment
+        android:id="@+id/fragment3"
+        class="com.zhitiekeji.equipmentmanagement.fragment.ReplyImplementationFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/indicator"
+        tools:layout="@layout/fragment_replyimplementation" />
+    <!--实施计划-->
+    <fragment
+        android:id="@+id/fragment4"
+        class="com.zhitiekeji.equipmentmanagement.fragment.ImplementationPlanFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/indicator"
+        tools:layout="@layout/fragment_implementationplan" />
+    <!--历年记录-->
+    <fragment
+        android:id="@+id/fragment5"
+        class="com.zhitiekeji.equipmentmanagement.fragment.CalendarYearFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/indicator"
+        tools:layout="@layout/fragment_calendaryear" />
+
+</RelativeLayout>

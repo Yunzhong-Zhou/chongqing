@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--分类选择栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black1"
+                android:text="审核结果" />
+            <TextView
+                android:id="@+id/textView1_1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@color/txt_black3" />-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black1"
+                android:text="报审记录" />
+            <TextView
+                android:id="@+id/textView2_1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+        <!--<View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@color/txt_black3" />-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black1"
+                android:text="修复结果" />
+            <TextView
+                android:id="@+id/textView3_1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black5"/>
+
+    <com.zhitiekeji.equipmentmanagement.view.LoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.zhitiekeji.equipmentmanagement.view.pullview.AbPullToRefreshView
+            android:id="@+id/pullview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null">
+            </ListView>
+        </com.zhitiekeji.equipmentmanagement.view.pullview.AbPullToRefreshView>
+
+    </com.zhitiekeji.equipmentmanagement.view.LoadingLayout>
+    <!--没有施工记录-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@mipmap/notdata">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂无施工记录\n\n请添加施工记录"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black4"
+            android:layout_marginBottom="40dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新增施工记录"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@drawable/yuanjiao_5_lanse"/>
+    </LinearLayout>
+    <!--没有竣工记录-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@mipmap/notdata">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂无竣工记录\n\n请添加竣工记录"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black4"
+            android:layout_marginBottom="40dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新增竣工记录"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@drawable/yuanjiao_5_lanse"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布维修结果"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/yuanjiao_5_lanse"/>
+
+</LinearLayout>

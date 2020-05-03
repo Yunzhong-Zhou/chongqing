@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/head2_linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/head2_textView1_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/yuanxing_lanse"
+                    android:gravity="center"
+                    android:text="段"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/head2_textView1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/head2_textView1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="[上报]"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/head2_textView1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="2017-12-7 15:45:18"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/head2_textView1_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="评估费用：0"
+                    android:textColor="#928d8d" />
+
+                <TextView
+                    android:id="@+id/head2_textView1_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="上报费用：0"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/head2_linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/head2_textView2_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/yuanxing_lanse"
+                    android:gravity="center"
+                    android:text="段"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/head2_textView2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/head2_textView2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="[下达]"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/head2_textView2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="2017-12-7 15:45:18"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/head2_textView2_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="计划号：0"
+                    android:textColor="#928d8d" />
+
+                <TextView
+                    android:id="@+id/head2_textView2_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="下达费用：0"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/head2_textView2_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="施工描述："
+                android:textColor="#807f7f" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/head2_linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/head2_textView3_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/yuanxing_lanse"
+                    android:gravity="center"
+                    android:text="段"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/head2_textView3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/head2_textView3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="[批复]"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/head2_textView3_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="2017-12-7 15:45:18"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/head2_textView3_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="评估费用：0"
+                    android:textColor="#928d8d" />
+
+                <TextView
+                    android:id="@+id/head2_textView3_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="上报费用：0"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/head2_textView3_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="评估费用：0"
+                    android:textColor="#928d8d" />
+
+                <TextView
+                    android:id="@+id/head2_textView3_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="上报费用：0"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/head2_textView3_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="评估费用：0"
+                    android:textColor="#928d8d" />
+
+                <TextView
+                    android:id="@+id/head2_textView3_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="上报费用：0"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/head2_textView3_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="评估费用：0"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/head2_linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/head2_textView4_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/yuanxing_lanse"
+                    android:gravity="center"
+                    android:text="段"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/head2_textView4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/head2_textView4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="[实施]"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/head2_textView4_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="2017-12-7 15:45:18"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/head2_textView4_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="评估费用：0"
+                    android:textColor="#928d8d" />
+
+                <TextView
+                    android:id="@+id/head2_textView4_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="上报费用：0"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/head2_textView4_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="评估费用：0"
+                    android:textColor="#928d8d" />
+
+                <TextView
+                    android:id="@+id/head2_textView4_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="上报费用：0"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/head2_textView4_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="评估费用：0"
+                    android:textColor="#928d8d" />
+
+                <TextView
+                    android:id="@+id/head2_textView4_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="上报费用：0"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#f2f2f2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="施工方案："
+                    android:textColor="#928d8d" />
+
+                <TextView
+                    android:id="@+id/head2_textView4_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shigongwenjian"
+                    android:onClick="onClick"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/head2_recyclerview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:scrollbars="none">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:id="@+id/head2_textView4_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:lineSpacingExtra="5dp"
+                android:padding="10dp"
+                android:text="施工描述："
+                android:textColor="#807f7f" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/head2_linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/head2_textView5_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/yuanxing_lanse"
+                    android:gravity="center"
+                    android:text="段"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/head2_textView5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/head2_textView5_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="[竣工]"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/head2_textView5_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="2017-12-7 15:45:18"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/head2_textView5_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="评估费用：0"
+                    android:textColor="#928d8d" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#f2f2f2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="竣工报告："
+                    android:textColor="#928d8d" />
+
+                <TextView
+                    android:id="@+id/head2_textView5_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shigongwenjian"
+                    android:onClick="onClick"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/head2_recyclerview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:scrollbars="none">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:id="@+id/head2_textView5_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:lineSpacingExtra="5dp"
+                android:padding="10dp"
+                android:text="施工描述："
+                android:textColor="#807f7f" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

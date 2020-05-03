@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+    <com.zhitiekeji.equipmentmanagement.view.FragmentIndicator3
+        android:paddingTop="0.5dp"
+        android:id="@+id/indicator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray" />
+    <fragment
+        android:id="@+id/fragment1"
+        class="com.zhitiekeji.equipmentmanagement.fragment.WorkShopFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/indicator"
+        tools:layout="@layout/fragment_workshop" />
+    <fragment
+        android:id="@+id/fragment2"
+        class="com.zhitiekeji.equipmentmanagement.fragment.WorkAreaFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/indicator"
+        tools:layout="@layout/fragment_workarea" />
+
+    <fragment
+        android:id="@+id/fragment3"
+        class="com.zhitiekeji.equipmentmanagement.fragment.WorkPersonalFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/indicator"
+        tools:layout="@layout/fragment_workpersonal" />
+
+</RelativeLayout>

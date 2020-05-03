@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.zhitiekeji.equipmentmanagement"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 28
+        versionName "1.0.28"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi'
+            //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'-腾讯Bugly
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "b66afa466db1d55861ec17cf", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    /*dexOptions {
+        //运行内容太低
+        javaMaxHeapSize "4g"
+    }*/
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:26.+'
+    //网络请求、解析
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    compile 'com.alibaba:fastjson:1.2.24'
+    //banner
+    compile 'com.youth.banner:banner:1.4.10'
+    //加载网络图片
+    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //百度地图
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/httpmime-4.1.2.jar')
+    //扫一扫
+    compile 'com.google.zxing:core:3.3.0'
+    //    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    //图片压缩
+    compile 'id.zelory:compressor:2.1.0'
+    //图片选择
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    //    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //横向滑动列表
+    compile files('libs/swipemenulistview.jar')
+    //滚动选择器
+    compile 'com.contrarywind:Android-PickerView:3.2.4'
+    //异常上报-腾讯bugly
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新Bugly SDK版本号
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新Bugly NDK版本号
+    //应用中的Dex 文件方法数超过了最大值65536的上限,简单来说，应用爆棚了
+    compile 'com.android.support:multidex:1.0.1'
+    //极光推送
+    compile 'cn.jiguang.sdk:jpush:3.1.1'  // 此处以JPush 3.1.1 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.9'  // 此处以JCore 1.1.9 版本为例。
+    //apk更新
+    compile 'com.github.maning0303:MNUpdateAPK:V1.1.7'
+}

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhitiekeji.equipmentmanagement">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!--读取手机信息-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--8.0安装需要的权限-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!--读取运行日志-->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 摄像头权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 自动聚焦权限 -->
+    <!--读写权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 极光推送 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 极光推送 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.zhitiekeji.equipmentmanagement.MyApplication">
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.HelloActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.utils.permission.PermissionsActivity"
+            android:label="权限页" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.GuideActivity"
+            android:label="广告引导页" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.LoginActivity"
+            android:label="登录" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.MainActivity"
+            android:label="主页" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ForgetPasswordActivity"
+            android:label="忘记密码" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.RegisteredActivity"
+            android:label="注册" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.zxing.CaptureActivity"
+            android:label="扫一扫" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ScanActivity"
+            android:label="扫一扫结果" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.EquipmentDetailActivity"
+            android:label="设备详情页" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.RepairDetailsActivity"
+            android:label="设备维修详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ReportDiseaseActivity"
+            android:label="发布维修申请" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddDiseaseActivity"
+            android:label="添加病害" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddEquipmentActivity"
+            android:label="添加设备" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddEquipmentImageActivity"
+            android:label="添加设备图片" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.MapCoordinatesActivity"
+            android:label="地图模式" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.PersonalInformationActivity"
+            android:label="个人资料" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.MyAuditActivity"
+            android:label="我的审核" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.MyAuditListActivity"
+            android:label="批量审核" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.SignatureActivity1"
+            android:label="批量审核签名" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.MaintenanceRecordDetailsActivity"
+            android:label="维修记录详情-我的审核详情-维修记录段内报审" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ShowSignatureActivity"
+            android:label="查看签名" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.MyReportActivity"
+            android:label="我的申请" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.MyReportDetailActivity"
+            android:label="我的申请详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.MyPublishingDeviceActivity"
+            android:label="我发布的设备" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.PleaseOverhaulActivity1"
+            android:label="我的请检修-个人中心" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.SignatureActivity"
+            android:label="签名画板" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.SignatureMoreActivity"
+            android:label="签名_多人" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AgreeDiseaseManagementActivity"
+            android:label="同意病害审核" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.DisagreeDiseaseManagementActivity"
+            android:label="不同意病害审核" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ConstructionManagementActivity"
+            android:label="施工管理" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ChangePhoneNumActivity"
+            android:label="修改手机号" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ChangePasswordActivity"
+            android:label="修改密码" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.HelpCenterActivity"
+            android:label="帮助中心" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.HelpCenterDetailActivity"
+            android:label="帮助中心详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.WebContentActivity"
+            android:label="网页详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.FeedBackActivity"
+            android:label="留言反馈" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.CustomerFeedbackActivity"
+            android:label="用户反馈" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ConstructionPlanActivity"
+            android:label="施工计划" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ConstructionPlanDetailActivity"
+            android:label="施工计划详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.StaffManagementActivity"
+            android:label="员工管理" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.StaffManagementDetailActivity"
+            android:label="员工管理详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.SchoolBagActivity"
+            android:label="党员小书包" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.DetailedDetailsActivity"
+            android:label="细部明细" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddDetailedDetailsActivity"
+            android:label="添加细部明细" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddDetailedDetails_ItemActivity"
+            android:label="添加细部明细-单个" />
+        <!--综合维修类-->
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.IntegratedMaintenanceActivity"
+            android:label="综合维修主页面" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ReportedPlanDetailActivity"
+            android:label="上报计划详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ReplyPlanDetailActivity"
+            android:label="批复计划详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ReplyImplementationDetailActivity"
+            android:label="批复实施详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ImplementationPlanDetailActivity"
+            android:label="实施计划详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.CalendarYearDetailActivity"
+            android:label="竣工详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddReportedPlanActivity"
+            android:label="上报发布" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddReplyPlanActivity"
+            android:label="下达发布" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddReplyImplementationActivity"
+            android:label="批复发布" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddImplementationPlanActivity"
+            android:label="实施发布" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddCalendarYearActivity"
+            android:label="竣工发布" />
+
+        <!--大修-->
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.OverhaulMainActivity"
+            android:label="大修主页面" />
+        <!--请检修-->
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.PleaseOverhaulMainActivity"
+            android:label="请检修主页面" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.WorkshopStatisticsActivity"
+            android:label="车间统计" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.StatisticalDetailsActivity"
+            android:label="统计详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.PleaseOverhaulActivity"
+            android:label="请检修" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.PleaseOverhaulDetailActivity"
+            android:label="请检修详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddPleaseOverhaulActivity"
+            android:label="添加请检修资料" />
+
+        <!--上报员-->
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ReportPersonMainActivity"
+            android:label="上报员主页面" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.AddDisease_ReportPersonActivity"
+            android:label="上报员-发布病害" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.DiseaseDetailActivity"
+            android:label="病害详情" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.RepairDiseaseActivity"
+            android:label="修复病害" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.activity.ViewPagerPhotoViewActivity"
+            android:label="可滑动放大图片" />
+
+        <!--图片选择-->
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.view.photochooser.PhotoPickActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.view.photochooser.PhotoPickDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="com.zhitiekeji.equipmentmanagement.view.photochooser.ImagePagerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <!--百度地图-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="6ViGGV4O4BRrlxS4HCc5CABAhpdoXGcv" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <!--7.0限制-私有目录被限制访问-->
+        //exported:要求必须为false，为true则会报安全异常。
+        //grantUriPermissions:true，表示授予 URI 临时访问权限。
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+
+
+        <!--极光推送-->
+        <receiver
+            android:name="com.zhitiekeji.equipmentmanagement.utils.jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.zhitiekeji.equipmentmanagement" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zhitiekeji.equipmentmanagement.utils.jpush.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="com.zhitiekeji.equipmentmanagement"></category>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--分类选择栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--计划号-->
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/downimg2"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="已巡检"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/textView1_1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/blue" />
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@color/txt_black3" />
+
+        <!--状态-->
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/equipment2"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="未巡检"
+                android:textColor="@color/black1" />
+
+            <TextView
+                android:id="@+id/textView2_1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/transparent" />
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:background="@color/txt_black3" />
+
+        <!--地区-->
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/equipment2"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="地区"
+                android:textColor="@color/black1" />
+
+            <TextView
+                android:id="@+id/textView3_1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/transparent" />
+        </LinearLayout>
+
+        <!--历年记录-->
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:background="@color/txt_black3" />
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:drawableRight="@mipmap/equipment2"
+                android:text="历年记录"
+                android:textColor="@color/black1" />
+
+            <TextView
+                android:id="@+id/textView4_1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/transparent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/pop_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black5" />
+    <com.zhitiekeji.equipmentmanagement.view.LoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhitiekeji.equipmentmanagement.view.pullview.AbPullToRefreshView
+            android:id="@+id/pullview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#eeeeee"
+                android:dividerHeight="1dp"
+                android:scrollbars="none">
+
+            </ListView>
+        </com.zhitiekeji.equipmentmanagement.view.pullview.AbPullToRefreshView>
+
+    </com.zhitiekeji.equipmentmanagement.view.LoadingLayout>
+</LinearLayout>

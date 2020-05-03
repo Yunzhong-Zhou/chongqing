@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="14dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yuanjiaobiankuang_2_huise"
+            android:hint="输入员工姓名或电话号码搜索"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:textColorHint="@color/gray"
+            android:padding="8dp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black6"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="姓名"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="14dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="电话"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="14dp"
+            android:singleLine="true"
+            android:text="职位"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.zhitiekeji.equipmentmanagement.view.LoadingLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhitiekeji.equipmentmanagement.view.pullview.AbPullToRefreshView
+            android:id="@+id/pullview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#eeeeee"
+                android:dividerHeight="1dp"
+                android:scrollbars="none">
+
+            </ListView>
+        </com.zhitiekeji.equipmentmanagement.view.pullview.AbPullToRefreshView>
+
+    </com.zhitiekeji.equipmentmanagement.view.LoadingLayout>
+</LinearLayout>

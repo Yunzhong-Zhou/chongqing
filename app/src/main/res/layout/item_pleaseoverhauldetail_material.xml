@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/txt_context3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--用来装材料id，后面有新办法再改-->
+            <TextView
+                android:id="@+id/textView_1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="材料种类"
+                android:textColor="@color/black2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@mipmap/downimg7" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:hint="0"
+            android:numeric="decimal"
+            android:padding="10dp"
+            android:textColor="@color/black3" />
+
+        <EditText
+            android:id="@+id/editText_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:hint="0"
+            android:numeric="decimal"
+            android:padding="10dp"
+            android:textColor="@color/black3" />
+
+    </LinearLayout>
+</LinearLayout>

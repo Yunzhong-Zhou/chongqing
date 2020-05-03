@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.zhitiekeji.equipmentmanagement.view.HackyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparentblack3">
+        <ImageView
+            android:id="@+id/left_btn"
+            android:layout_width="48dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:padding="14dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/back" />
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1/2"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginRight="48dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_currentPosition"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#60000000"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>
